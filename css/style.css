@@ -25,7 +25,6 @@ html, body {
 
 a {
     font-size: 0.8125rem;
-    letter-spacing: 0.28px;
     color: #3880FF;
     transition: color 0.5s, transform 0.5s;
 }
@@ -44,17 +43,14 @@ h1, h3, h5 {
 h1 {
     font-size: 5.5rem;
     line-height: 1;
-    letter-spacing: 1.92px;
 }
 
 h3 {
     font-size: 3.75rem;
-    letter-spacing: 0.64px;
 }
 
 h5 {
     font-size: 1.25rem;
-    letter-spacing: 0.2px;
 }
 
 @media (max-width: 575px) {
@@ -95,13 +91,11 @@ header .row {
     padding-top: 26px;
     padding-bottom: 26px;
     font-size: 0.6875rem;
-    letter-spacing: 0.12px;
     color: #DEE3EA;
 }
 
 header .row .col-xl-2 {
     text-align: center;
-    letter-spacing: 0.96px;
     text-transform: uppercase;
     color: #0054E9;
 }
@@ -114,7 +108,6 @@ header .row .col-xl-2 {
 
 header .header-bg {
     position: sticky !important;
-    position: -webkit-sticky;
     top: 20px;
     background: rgba(255, 255, 255, 0.92);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -142,7 +135,6 @@ header .navbar-nav .nav-item .nav-link {
 header .navbar-nav .nav-item.e-book {
     padding: 8px 4px 8px 10px;
     font-size: 0.625rem;
-    letter-spacing: 1.6px;
     text-transform: uppercase;
     color: #CDDFFF;
 }
@@ -162,7 +154,6 @@ header .navbar-nav .nav-item.e-book {
         padding-right: 10px;
         padding-left: 10px;
     }
-
 }
 
 /*Styles for Overview, Build / Secure / Deliver Case studies, Resources*/
@@ -172,7 +163,6 @@ header .navbar-nav .nav-item.e-book {
     font-weight: normal;
     font-size: 0.8125rem;
     line-height: 0.6124rem;
-    letter-spacing: 2.24px;
     text-transform: uppercase;
     color: #92A0B3;
     margin-bottom: 25px;
@@ -194,7 +184,6 @@ header .navbar-nav .nav-item.e-book {
 .section1 .row > .header-col p {
     font-size: 1.25rem;
     line-height: 32px;
-    letter-spacing: 0.2px;
     margin-top: 66px;
 }
 
@@ -208,7 +197,6 @@ header .navbar-nav .nav-item.e-book {
 }
 
 .section1 .btn.btn-blue {
-    /*padding: 0 10px;*/
     color: #FFFFFF;
     margin-left: 15px;
 }
@@ -261,7 +249,6 @@ header .navbar-nav .nav-item.e-book {
     margin-top: 65px;
 }
 
-
 /*-----------section-4-------------*/
 .section4 {
     margin-top: 198px;
@@ -279,7 +266,6 @@ header .navbar-nav .nav-item.e-book {
 
 .section5 .block-bg {
     min-height: 100%;
-
 }
 
 .section5 .row:last-of-type {
@@ -307,9 +293,7 @@ header .navbar-nav .nav-item.e-book {
 
 .section6 .amtrak {
     border-radius: 32px;
-    background: url(../images/section_2/train_bckgrnd.png);
-    background-position: center;
-    background-repeat: no-repeat;
+    background: url(../images/section_2/train_bckgrnd.png) no-repeat center;
     position: relative;
     background-size: cover;
 }
@@ -340,7 +324,6 @@ header .navbar-nav .nav-item.e-book {
 
 .section8 .visit-style {
     padding: 20px 35px 0;
-    letter-spacing: 0.16px;
 }
 
 .section8 .row:last-of-type {
@@ -397,7 +380,7 @@ header .navbar-nav .nav-item.e-book {
     padding-left: 30px;
 }
 
-.section9 h5, a, .btn-blue{
+.section9 h5, a, .btn-blue {
     z-index: 2;
 }
 
@@ -417,7 +400,6 @@ header .navbar-nav .nav-item.e-book {
     left: calc(100% - 165px);
 }
 
-
 /*-----------Bottom footer-------------*/
 .bottom_footer {
     margin-top: 45px;
@@ -427,7 +409,6 @@ header .navbar-nav .nav-item.e-book {
     display: flex;
     margin-inline-start: 20rem;
     margin-block-start: 20rem;
-
 }
 
 .footer_cop {
@@ -485,5 +466,4 @@ header .navbar-nav .nav-item.e-book {
     .section9 {
         margin-top: -100px;
     }
-
 }
