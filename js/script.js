@@ -13,10 +13,10 @@ const slideRight = [
 ];
 ScrollReveal().reveal('.section1', {duration: 1000});
 ScrollReveal().reveal(slideLeft, {
-    duration: 3000,
+    duration: 2000,
     easing: 'ease-out',
     distance: '25%',
-    scale: 0.5,
+    scale: 0.25,
     origin: 'left',
     rotate: {
         y: 120,
@@ -24,10 +24,10 @@ ScrollReveal().reveal(slideLeft, {
     },
 });
 ScrollReveal().reveal(slideRight, {
-    duration: 3000,
+    duration: 2000,
     easing: 'ease-out',
     distance: '25%',
-    scale: 0.5,
+    scale: 0.25,
     origin: 'right',
     rotate: {
         y: -120,
