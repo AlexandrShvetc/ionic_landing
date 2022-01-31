@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "4.6",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "scrollreveal": "^4.0.9"
   }
 }

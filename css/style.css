@@ -6,6 +6,10 @@ html, body {
     color: #445B78;
 }
 
+html.sr .section1, .section2, .section3, .section4, .section5, .section6, .section8, .section9, .footer, .bottom_footer {
+    visibility: hidden;
+}
+
 /*Styles for link article headers*/
 .btn-blue {
     padding: 0 10px;
