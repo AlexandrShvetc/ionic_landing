@@ -6,14 +6,80 @@ html, body {
     color: #445B78;
 }
 
-/*-----------header-------------*/
+/*Styles for link article headers*/
 .btn-blue {
+    padding: 0 10px;
     background: #1B6DFF;
     border-radius: 1000px;
     font-size: 0.875rem;
     color: #FFFFFF;
-    padding: 8px 11px 11px 12px;
     text-decoration: none;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.btn-blue:hover {
+    color: #FFFFFF;
+    background: #84a1d2;
+    transform: scale(1.1);
+}
+
+a {
+    font-size: 0.8125rem;
+    letter-spacing: 0.28px;
+    color: #3880FF;
+    transition: background 0.5s, transform 0.5s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #84a1d2;
+    transform: scale(1.1);
+}
+
+h1, h3, h5 {
+    font-weight: 700;
+    color: #03060B;
+}
+
+h1 {
+    font-size: 5.5rem;
+    line-height: 1;
+    letter-spacing: 1.92px;
+}
+
+h3 {
+    font-size: 3.75rem;
+    letter-spacing: 0.64px;
+}
+
+h5 {
+    font-size: 1.25rem;
+    letter-spacing: 0.2px;
+}
+
+@media (max-width: 575px) {
+    h1 {
+        font-size: 4.4rem;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 349px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    h3 {
+        font-size: 2.6rem;
+    }
+}
+
+/*-----------header-------------*/
+header .btn-blue {
+    padding: 8px 11px;
 }
 
 header .navbar {
@@ -112,63 +178,6 @@ header .navbar-nav .nav-item.e-book {
     margin-bottom: 25px;
 }
 
-/*Styles for link article headers*/
-a {
-    font-size: 0.8125rem;
-    letter-spacing: 0.28px;
-    color: #3880FF;
-}
-
-h1, h3, h5 {
-    font-weight: 700;
-    color: #03060B;
-}
-
-h1 {
-    font-size: 5.5rem;
-    line-height: 1;
-    letter-spacing: 1.92px;
-}
-
-h3 {
-    font-size: 3.75rem;
-    letter-spacing: 0.64px;
-}
-
-h5 {
-    font-size: 1.25rem;
-    letter-spacing: 0.2px;
-}
-
-.btn-blue:hover{
-    color: #FFFFFF;
-    background: #84a1d2;
-}
-
-a:hover{
-    text-decoration: none;
-    color: #84a1d2;
-}
-
-@media (max-width: 575px) {
-    h1 {
-        font-size: 4.4rem;
-    }
-
-    h3 {
-        font-size: 3rem;
-    }
-}
-@media (max-width: 349px) {
-    h1 {
-        font-size: 4rem;
-    }
-
-    h3 {
-        font-size: 2.6rem;
-    }
-}
-
 /*-----------section-1-------------*/
 .section1 {
     background-image: url(../images/section_1/section_1_png.png);
@@ -199,7 +208,7 @@ a:hover{
 }
 
 .section1 .btn.btn-blue {
-    padding: 0 15px 4px 20px;
+    /*padding: 0 10px;*/
     color: #FFFFFF;
     margin-left: 15px;
 }
@@ -252,14 +261,12 @@ a:hover{
     margin-top: 65px;
 }
 
-.footer__info {
-    display: flex;
-    margin-inline-start: 20rem;
-    margin-block-start: 20rem;
-
-}
 
 /*-----------section-4-------------*/
+.section4 {
+    margin-top: 198px;
+}
+
 .section4 .container > .row {
     margin-top: 198px;
     padding: 0 15px;
@@ -284,7 +291,7 @@ a:hover{
     margin-top: 240px;
 }
 
-.section6 p {
+.section6 p.right-col {
     margin-top: 26px;
     padding: 0 120px 0 0;
 }
@@ -298,12 +305,31 @@ a:hover{
     margin-right: 40px;
 }
 
-.section6 .amtrak img {
-    max-width: 100%;
+.section6 .amtrak {
+    border-radius: 32px;
+    background: url(../images/section_2/train_bckgrnd.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+.section6 .amtrak {
+    padding: 200px 48px 48px 48px;
+}
+
+.section6 .amtrak p {
+    margin-top: 26px;
+    /*font-family: 'Arial';*/
+    color: #FFFFFF;
+}
+
+.section6 .amtrak .btn-blue {
+    background: rgba(255, 255, 255, 0.2)
 }
 
 @media (max-width: 991px) {
-    .section6 p {
+    .section6 p.right-col {
         padding: 0;
     }
 }
@@ -373,7 +399,8 @@ a:hover{
     background-color: #e8f5ff;
     min-height: 200px;
 }
-.section9 .right-col a{
+
+.section9 .right-col a {
     font-weight: 700;
 }
 
@@ -384,14 +411,19 @@ a:hover{
 }
 
 .section9 .btn.btn-blue {
-    padding: 0 15px 4px 20px;
-    color: #FFFFFF;
     margin-left: 30px;
 }
 
 /*-----------Bottom footer-------------*/
 .bottom_footer {
     margin-top: 45px;
+}
+
+.footer__info {
+    display: flex;
+    margin-inline-start: 20rem;
+    margin-block-start: 20rem;
+
 }
 
 .footer_cop {
@@ -417,21 +449,27 @@ a:hover{
     .section4 .container > .row {
         margin-top: 100px;
     }
+
     .section5 {
         margin-top: 165px;
     }
+
     .section5 .row:last-of-type {
         margin-top: 51px;
     }
+
     .section6 {
         margin-top: 140px;
     }
+
     .section8 {
         margin-top: 140px;
     }
+
     .section8 .row:last-of-type {
         margin-top: 50px;
     }
+
     .section9 {
         margin-top: 140px;
     }
