@@ -1,19 +1,7 @@
-const slideLeft = [
-    document.querySelector('.section2'),
-    document.querySelector('.section4'),
-    document.querySelector('.section6'),
-    document.querySelector('.section9'),
-    document.querySelector('.bottom_footer'),
-];
-const slideRight = [
-    document.querySelector('.section3'),
-    document.querySelector('.section5'),
-    document.querySelector('.section8'),
-    document.querySelector('.footer'),
-];
-ScrollReveal().reveal('.section1', {duration: 1000});
-ScrollReveal().reveal(slideLeft, {
-    duration: 2000,
+ScrollReveal().reveal('.animate-fade', {duration: 1000});
+
+ScrollReveal().reveal('.slide-left', {
+    duration: 1000,
     easing: 'ease-out',
     distance: '25%',
     scale: 0.25,
@@ -23,8 +11,9 @@ ScrollReveal().reveal(slideLeft, {
         z: 90,
     },
 });
-ScrollReveal().reveal(slideRight, {
-    duration: 2000,
+
+ScrollReveal().reveal('.slide-right', {
+    duration: 1000,
     easing: 'ease-out',
     distance: '25%',
     scale: 0.25,

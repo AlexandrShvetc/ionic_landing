@@ -6,10 +6,6 @@ html, body {
     color: #445B78;
 }
 
-html.sr .section1, .section2, .section3, .section4, .section5, .section6, .section8, .section9, .footer, .bottom_footer {
-    visibility: hidden;
-}
-
 /*Styles for link article headers*/
 .btn-blue {
     padding: 0 10px;
@@ -163,8 +159,6 @@ header .navbar-nav .nav-item.e-book {
 /*Styles for Overview, Build / Secure / Deliver Case studies, Resources*/
 .head-style {
     font-family: 'Roboto Mono', monospace;
-    font-style: normal;
-    font-weight: normal;
     font-size: 0.8125rem;
     line-height: 0.6124rem;
     text-transform: uppercase;
@@ -261,6 +255,11 @@ header .navbar-nav .nav-item.e-book {
 .section4 .container > .row {
     margin-top: 198px;
     padding: 0 15px;
+}
+
+.section4 .d-flex> div{
+    flex: 0 1 100%;
+    text-align: center;
 }
 
 /*-----------section-5-------------*/
