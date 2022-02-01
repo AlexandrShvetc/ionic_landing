@@ -1,3 +1,4 @@
+@import "node_modules/bootstrap/dist/css/bootstrap.min.css";
 html, body {
     font-family: Arial, "Helvetica CY", "Nimbus Sans L", sans-serif;
     font-size: 16px;

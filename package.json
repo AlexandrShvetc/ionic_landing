@@ -11,6 +11,17 @@
   "dependencies": {
     "bootstrap": "4.6",
     "gulp": "^4.0.2",
+    "gulp-connect": "^5.7.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "scrollreveal": "^4.0.9"
+  },
+  "devDependencies": {
+    "gulp-concat": "^2.6.1",
+    "gulp-favicons": "^3.0.0"
   }
 }
